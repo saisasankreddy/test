@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./login.js" defer></script>
+    <style>
+        #container {
+            width: 30vw;
+            height: 25vw;
+            background-color: aqua;
+            border-radius: 10px;
+            border: 2px solid black;
+            margin-left: 38vw;
+            margin-top: 10vw;
+            background-size: 100% 100%;
+
+            background-image: url(../../../Asset/images/download.jfif);
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 0.8vw;
+            letter-spacing: 1vw;
+            font-weight: bold;
+            color: rgba(61, 5, 71, 0.944);
+            text-decoration: underline burlywood;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        input {
+            width: 16vw;
+            height: 2.3vw;
+            text-align: left;
+            margin-left: 6.5vw;
+            text-indent: 1vw;
+            border-radius: 10px;
+            box-shadow: inset 2px 2px 2px black, inset -2px -2px 2px black;
+            text-shadow: 1px 1px 1px black;
+            line-height: 1.5vw;
+            background-color: brown;
+            letter-spacing: 0.1vw;
+            text-transform: capitalize;
+            border: none;
+            outline: none;
+            text-align: justify;
+            background-color: transparent;
+        }
+
+        #login {
+            text-align: center;
+            text-indent: -0.5vw;
+            width: 5vw;
+            border-radius: 0px;
+            margin-left: 11vw;
+        }
+
+        #eye {
+            filter: drop-shadow(1px 1px 1px gray);
+            padding-top: -0.5vw;
+            padding-left: -1.5vw;
+            width: 1.5vw;
+            position: relative;
+            margin-bottom: -0.4vw;
+            margin-left: -2.2vw;
+        }
+
+        #password {
+            text-align: justify;
+            padding-top: -2vw;
+            margin-top: -0.2vw;
+        }
+        .register{
+            float: left;
+            width: 8vw;
+            margin-left: 18vw;
+            margin-top: -3.5vw;
+            border-radius: 0%;
+        }
+        a{
+            color: rgb(48, 6, 19);
+        }
+
+    </style>
+</head>
+
+<body>
+    <form>
+    <div id="container">
+        <h1>Login Page</h1><br>
+        <input type="email" placeholder="Enter your email" required><br><br>
+        <br><input id="password" type="password" oninput="password()" placeholder="Enter your password">
+        <img src="../../../Asset/images/eye_hidden.png" onmouseup=" funpassinvisi()" onmousedown=" funpassvisi()" id="eye">
+        <span id="status"></span>
+
+        <br><br><br>
+        <input id="login" type="submit" value="Login"><br><br>
+        <!-- <input class="register" type="submit" value="Register"> -->
+         <a class="register" name="a" target=""></a>
+    </div>
+</form>
+</body>
+</html>

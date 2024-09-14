@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./register.js" defer></script>
+    <style>
+        *{
+            padding: 0%;
+            margin: 0%;
+        }
+        #container{
+            background-image: url(../../../../Asset/images/1.jpeg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            width: 28vw;
+            height: 29vw;
+            border-radius: 10px;
+            border: 2px solid black;
+            margin-left: 36vw;
+            margin-top: 9vw;
+        }
+        h1{
+            text-align: center;
+            margin-top: 0.2vw;
+            text-transform: capitalize;
+        }
+        input{
+            height: 2vw;
+            background: transparent;
+            font-size: 1vw;
+            border: none;
+            outline: none;
+            word-spacing: 0.3vw;
+            text-transform: capitalize;
+            text-indent: 1vw;
+            border-radius: 10px;
+            box-shadow: inset 1.5px 1.5px 2px black, inset -1.5px -1.5px 2px black;
+            text-shadow: 1px 1px 1px black;
+            line-height: 1.5vw;
+           
+            letter-spacing: 0.2vw;
+            /* position: relative; */
+        }
+        input::placeholder{
+            color: red;
+        }
+        .email{
+            text-indent: 1vw;
+            border-radius: 10px;
+            box-shadow: inset 2px 2px 2px black, inset -2px -2px 2px black;
+            text-shadow: 1px 1px 1px black;
+            line-height: 1.5vw;
+            outline: none;
+            width: 20vw;
+        }
+        .email::placeholder{
+            color: chocolate;
+            text-align: center;
+        }
+        #login{
+            width: 6vw;
+            text-align: center;
+            margin-left: 10vw;
+            border-radius: 0px;
+            text-indent: 0.4vw;
+        }
+        #eye{
+            background-color: blue;
+            background: transparent;
+            filter: drop-shadow(1px 1px 1px gray);
+            /* padding-top: -0.5vw;
+            padding-left: -2vw; */
+            width: 1.5vw;
+            /* position: relative; */
+            margin-bottom: -2vw;
+            margin-left: 7.5vw;
+        }
+        #eye1{
+            background-color: red;
+            background: transparent;
+            filter: drop-shadow(1px 1px 1px gray);
+            /* padding-top: -5vw;
+            padding-left: -2vw; */
+            width: 1.5vw;
+            /* position: relative; */
+            margin-bottom: -1.9vw;
+            margin-left: 8vw;
+        }
+
+        #password {
+            text-align: justify;
+            padding-top: -2vw;
+            margin-top: -0.2vw;
+        }
+        #conpassword{
+            text-align: justify;
+            padding-top: -2vw;
+            margin-top: -0
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+    <div id="container">
+        <h1>registration!</h1><br>
+    
+        <input type="text" >
+        <input type="text" ><br><br>
+        <input type="text" ><br><br>Enter Your Email <br>
+        <input class="email" id="password" type="email" ><br><br>Create New Password
+        <img  src="../../../../Asset/images/eye_hidden.png" onmouseup="funpassinvisiable()" onmousedown="funpassvisiable()" id="eye"> 
+        <input class="email" id="conpassword" type="password"><br><br>Conform Password
+         <img src="../../../../Asset/images/eye_hidden.png" onmouseup="funpassinvisiable1()" onmousedown=" funpassvisiable1()" id="eye1"> 
+        <br>
+        
+        <input class="email" type="password"><br><br>
+        <input id="login" type="submit">
+    </div>
+</form>
+</body>
+</html>
